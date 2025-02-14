@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-theme">
+    <h1>
+        <img src="icon.png" alt="Game Logo" class="icon"> TIC-TAC-TOE
+    </h1>
+    <div class="menu">
+        <div class="rules" onclick="showRules()">
+            <img src="rules.png" alt="Rules Icon" class="icon"> Game Rules
+        </div>
+        <div class="mode-container">
+            <div class="mode" onclick="selectMode('computer')">
+                <img src="computer.jpg" alt="Computer Icon" class="icon"> Play vs Computer
+            </div>
+            <div class="mode" onclick="selectMode('friend')">
+                <img src="friend.avif" alt="Friend Icon" class="icon"> Play with Friend
+            </div>
+        </div>
+    </div>
+    <div class="board" id="board"></div>
+    <div class="restart" onclick="resetGame()">
+        <img src="restart.png" alt="Restart Icon" class="icon">Restart Game
+    </div>
+    <div class="theme-button" onclick="toggleTheme()">
+        <img src="theme.png" alt="Theme Icon" class="icon"> Theme
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
